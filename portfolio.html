@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anugya Vaidya | Student Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- DYNAMIC BACKGROUND CANVAS -->
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">AV<span>.</span></div>
+            <div class="nav-links">
+                <a href="#profile">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-image-wrapper">
+                <div class="profile-frame">
+                    <img src="profile.png" alt="Anugya Vaidya" class="profile-img">
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="reveal-hidden">ANUGYA VAIDYA</h1>
+                <p class="subtitle reveal-hidden">BSc Computer Science Student | Technical Tutor</p>
+                <div class="hero-actions reveal-hidden">
+                    <a href="CV_Anugya_Vaidya.pdf" download class="btn-primary">
+                        <i data-lucide="download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PROFILE SECTION -->
+        <section id="profile" class="section">
+            <div class="container">
+                <h2 class="section-title">Professional Statement</h2>
+                <div class="glass-card profile-card">
+                    <p>An ambitious and adaptable **BSc (Hons) Computer Science student**, dedicated to bridging the gap between theoretical computing and practical industry application. With a strong foundation in data handling and visual composition, I am committed to excellence in every project. I leverage my experience in **tutoring and leadership** to solve complex problems and foster collaborative environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Areas of Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skills-category glass-card">
+                        <h3>Technical Proficiencies</h3>
+                        <div class="skills-container">
+                            <span class="skill-tag highlight">Python (Core)</span>
+                            <span class="skill-tag">MS Office Suite</span>
+                            <span class="skill-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                    <div class="skills-category glass-card">
+                        <h3>Creative & Visual</h3>
+                        <div class="skills-container">
+                            <span class="skill-tag">Visual Composition</span>
+                            <span class="skill-tag">Design Fundamentals</span>
+                            <span class="skill-tag">UI Concepts</span>
+                        </div>
+                    </div>
+                    <div class="skills-category glass-card">
+                        <h3>Core Competencies</h3>
+                        <div class="skills-container">
+                            <span class="skill-tag">Critical Thinking</span>
+                            <span class="skill-tag">Project Planning</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="time-meta">
+                            <span class="year">2024 - 2028</span>
+                            <a href="Bachelors_Cert.pdf" download class="cert-link">
+                                <i data-lucide="award"></i> View Certificate
+                            </a>
+                        </div>
+                        <h3>BSC (HONS) COMPUTER SCIENCE</h3>
+                        <p>University of Westminster | Current Student</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section highlight-bg">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-grid">
+                    <div class="glass-card exp-card">
+                        <h3>Private Tutor</h3>
+                        <p class="badge">Feb 2025 - Present</p>
+                        <p>Explained complex concepts clearly using visual and structured methods. Demonstrated patience and adaptability for individual learning styles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <span>anugyavaidya@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="linkedin"></i>
+                            <a href="https://linkedin.com/in/anugya-vaidya" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <form class="contact-form glass-card">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" rows="4" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Anugya Vaidya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>if(typeof lucide !== 'undefined') lucide.createIcons();</script>
+</body>
+</html>
